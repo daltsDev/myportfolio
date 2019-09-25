@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap');
 
+:root {
+  --main-color: #4f6367;
+  --sec-color: #7a9e9f;
+  --accent1-color: #ef516d;
+  --accent2-color: #eef5db;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +25,7 @@ body {
 
 #logo-main {
   fill: transparent;
-  stroke: #312d2f;
+  stroke: var(--main-color);
   animation: fill-logo 3s ease forwards 3s;
   margin-left: 1rem;
 }
@@ -100,7 +106,7 @@ body {
     fill: transparent;
   }
   to {
-    fill: #312d2f;
+    fill: var(--main-color);
   }
 }
 @keyframes hamdraw {
@@ -109,38 +115,42 @@ body {
   }
 }
 .showcase-container {
-  color: #312d2f;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
+  display: grid;
+  grid-template-areas:
+      "h1"
+      "about"
+      "img";
 }
 .showcase-h1 {
+  grid-area: h1;
   margin: 5rem 1.5rem 3rem 1.5rem;
   font-weight: 900;
   letter-spacing: 0.06rem;
   text-align: left;
+  color: var(--main-color);
 }
 .showcase-h1-sub {
-  color: #d36462;
+  color: var(--accent1-color);
   letter-spacing: 0.06rem;
 }
-.showcase-sub-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-}
+
 .showcase-about {
+  grid-area: about;
   margin: 0 1.5rem;
   text-align: left;
+  color: var(--main-color);
 }
 .showcase-img {
+  grid-area: img;
   width: 60%;
   height: auto;
   border-radius: 50%;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
-.resume-container, .projects-container {
+.resume-container, .js-projects-container, .ang-projects-container {
   min-width: 310px;
   max-width: 960px;
   margin: 0 auto;
@@ -150,7 +160,7 @@ body {
   letter-spacing: 0.06rem;
   margin: 2rem 1.5rem;
   font-size: 1.5rem;
-  color: #312d2f;
+  color: var(--main-color);
 }
 .work-card-container, .projects-card-container {
   display: flex;
@@ -159,14 +169,14 @@ body {
 .work-card, .projects-card {
   margin: 2rem 0.5rem;
   min-width: 310px;
-  max-width: 350px;
+  max-width: 26rem;
   height: auto;
   text-align: center;
 }
 .work-h4, .projects-h4 {
   font-size: 1.2rem;
   margin: 1rem;
-  color: #312d2f;
+  color: var(--main-color);
   text-align: left;
   font-size: 1.75rem;
   font-weight: 900;
@@ -176,22 +186,73 @@ body {
   margin: 1rem;
   text-align: left;
   opacity: 0.7;
+  color: var(--main-color);
 }
 .work-img, .projects-img {
-  width: 320px;
+  width: 26rem;
   height: auto;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.work-img:hover, .projects-img:hover {
+  transform: scale(1.05);
 }
 .work-link, .projects-link {
   text-decoration: none;
-  color: #312d2f;
+  color: var(--main-color);
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
-.work-link:hover {
+.work-link:hover, .projects-link:hover {
   cursor: pointer;
+  color: var(--accent1-color);
 }
 .fa-caret-right {
   font-weight: 900;
   margin-left: 0.5rem;
   font-size: 1rem;
+}
+
+.fa-angular, .fa-js-square {
+  margin-right: 0.7rem;
+  color: var(--accent1-color);
+}
+
+
+/* // tablet view media query */
+@media only screen and (min-width: 426px) {
+  .showcase-container {
+    display: grid;
+    grid-template-areas:
+        "h1 img"
+        "about img";
+  }
+  .showcase-h1 {
+    grid-area: h1;
+    margin: 2rem 1.5rem;
+  }
+.showcase-about {
+  grid: about;
+}
+  .showcase-img {
+    grid-area: img;
+    width: 85%;
+    margin: auto;
+  }
+
+  /* .work-img, .projects-img {
+    width: 425px;
+} */
+}
+.work-card-container, .projects-card-container {
+  justify-content: space-around;
+}
+
+
+
+/* // desktop view media query */
+@media only screen and (min-width: 769px) {
 }
