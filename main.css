@@ -406,7 +406,7 @@ body {
 
 .fa-github {
   font-size: 2rem;
-  margin: 2rem 0rem 3rem 1.5rem;
+  margin: 2rem 2rem 3rem 1.5rem;
   color: var(--sec-color);
 }
 
@@ -493,5 +493,8 @@ body {
 @media only screen and (min-width: 769px) {
   .skill-list-item {
     margin: 2rem 4rem 2rem 2rem;
+  }
+  .fa-github {
+    margin: 2rem 4rem 3rem 1.5rem;
   }
 }
