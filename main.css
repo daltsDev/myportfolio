@@ -310,6 +310,7 @@ body {
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
+  margin-top: 1rem;
   transition: color 0.3s ease;
 }
 
