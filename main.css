@@ -16,6 +16,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  background-color: #EFEEEE;
 }
 
 .header-container {
@@ -260,6 +261,11 @@ body {
   max-width: 22rem;
   height: auto;
   text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 15px 15px 30px #cbcaca,
+    -15px -15px 20px #ffffff;
+  box-shadow: 15px 15px 30px #cbcaca,
+    -15px -15px 20px #ffffff;
 }
 
 .work-h4,
@@ -286,8 +292,6 @@ body {
   width: 19rem;
   height: auto;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;
@@ -314,11 +318,35 @@ body {
   transition: color 0.3s ease;
 }
 
-.work-link:hover,
-.projects-link:hover,
-.work-link:active .projects-link:active {
+
+
+.project-button {
+  margin: 1rem 0;
+  width: 10rem;
+  height: 2.8rem;
+  text-decoration: none;
+  border: none;
+  background-color: #EFEEEE;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px #cbcaca,
+    -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #cbcaca,
+    -5px -5px 10px #ffffff;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.project-button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 8px 8px 15px #cbcaca,
+    -8px -8px 15px #ffffff;
+  box-shadow: 8px 8px 15px #cbcaca,
+    -8px -8px 15px #ffffff;
   cursor: pointer;
-  color: var(--accent1-color);
+
 }
 
 .hover--active {
