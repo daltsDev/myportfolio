@@ -8,80 +8,46 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <title>Stephen Dalton</title>
 </head>
 
 <body>
-    <div class="header-container">
-        <svg id="new-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="30" x="0px" y="0px" viewBox="580 500 1000 80"
-            style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+    <div class="loader-container" id="loading-screen">
+        <svg id="new-logo" width="367" height="48" viewBox="0 0 367 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="logo">
             <path
-                d="M503.46,542.53c-2.86-0.88-5.29-2.14-7.29-3.78l2.64-5.64c2.08,1.56,4.25,2.71,6.51,3.45c2.26,0.74,4.73,1.11,7.41,1.11
-                     c2.96,0,5.25-0.52,6.87-1.56c1.62-1.04,2.43-2.5,2.43-4.38c0-1.6-0.75-2.83-2.25-3.69c-1.5-0.86-3.97-1.67-7.41-2.43
-                     c-5.36-1.16-9.26-2.66-11.7-4.5c-2.44-1.84-3.66-4.52-3.66-8.04c0-2.52,0.68-4.76,2.04-6.72c1.36-1.96,3.29-3.5,5.79-4.62
-                     c2.5-1.12,5.39-1.68,8.67-1.68c3,0,5.85,0.45,8.55,1.35c2.7,0.9,4.91,2.15,6.63,3.75l-2.58,5.64c-3.8-3.04-8-4.56-12.6-4.56
-                     c-2.76,0-4.94,0.57-6.54,1.71c-1.6,1.14-2.4,2.69-2.4,4.65c0,1.68,0.71,2.96,2.13,3.84c1.42,0.88,3.85,1.7,7.29,2.46
-      c3.56,0.84,6.46,1.75,8.7,2.73c2.24,0.98,3.96,2.24,5.16,3.78c1.2,1.54,1.8,3.47,1.8,5.79c0,2.56-0.68,4.79-2.04,6.69
-                     c-1.36,1.9-3.32,3.37-5.88,4.41c-2.56,1.04-5.58,1.56-9.06,1.56C509.39,543.85,506.31,543.41,503.46,542.53z" />
+                d="M13.8999 37.4502C11.1666 37.4502 8.5999 37.0835 6.1999 36.3502C3.83324 35.6169 1.81657 34.5669 0.149902 33.2002L2.3499 28.5002C4.08324 29.8002 5.88324 30.7669 7.7499 31.4002C9.6499 32.0002 11.7166 32.3002 13.9499 32.3002C16.4166 32.3002 18.3166 31.8669 19.6499 31.0002C21.0166 30.1335 21.6999 28.9169 21.6999 27.3502C21.6999 26.0169 21.0666 25.0002 19.7999 24.3002C18.5666 23.5669 16.5166 22.8835 13.6499 22.2502C9.18324 21.2835 5.93324 20.0335 3.8999 18.5002C1.86657 16.9669 0.849902 14.7335 0.849902 11.8002C0.849902 9.7002 1.41657 7.83353 2.5499 6.2002C3.68324 4.56686 5.28324 3.28353 7.3499 2.3502C9.4499 1.41686 11.8666 0.950197 14.5999 0.950197C17.0999 0.950197 19.4666 1.33353 21.6999 2.1002C23.9666 2.83353 25.8166 3.86686 27.2499 5.2002L25.0999 9.9002C21.9332 7.36686 18.4332 6.1002 14.5999 6.1002C12.2999 6.1002 10.4832 6.58353 9.1499 7.5502C7.81657 8.48353 7.1499 9.76686 7.1499 11.4002C7.1499 12.8002 7.73324 13.8669 8.8999 14.6002C10.0999 15.3335 12.1332 16.0169 14.9999 16.6502C17.9666 17.3502 20.3832 18.1169 22.2499 18.9502C24.1166 19.7502 25.5499 20.8002 26.5499 22.1002C27.5499 23.3669 28.0499 24.9669 28.0499 26.9002C28.0499 29.0335 27.4832 30.9002 26.3499 32.5002C25.2166 34.0669 23.5832 35.2835 21.4499 36.1502C19.3166 37.0169 16.7999 37.4502 13.8999 37.4502Z" />
             <path
-                d="M545.43,518.65v13.56c0,3.56,1.66,5.34,4.98,5.34c0.92,0,1.92-0.16,3-0.48v5.94c-1.32,0.48-2.92,0.72-4.8,0.72
-                     c-3.44,0-6.08-0.96-7.92-2.88c-1.84-1.92-2.76-4.68-2.76-8.28v-13.92h-5.82v-5.64h5.82v-7.38l7.5-2.52v9.9h8.04v5.64H545.43z" />
-            <path d="M585.15,528.55h-20.88c0.16,3.24,0.97,5.63,2.43,7.17c1.46,1.54,3.63,2.31,6.51,2.31c3.32,0,6.4-1.08,9.24-3.24l2.16,5.16
-                     c-1.44,1.16-3.21,2.09-5.31,2.79s-4.23,1.05-6.39,1.05c-4.96,0-8.86-1.4-11.7-4.2c-2.84-2.8-4.26-6.64-4.26-11.52
-                     c0-3.08,0.62-5.82,1.86-8.22c1.24-2.4,2.98-4.27,5.22-5.61c2.24-1.34,4.78-2.01,7.62-2.01c4.16,0,7.45,1.35,9.87,4.05
-                     c2.42,2.7,3.63,6.41,3.63,11.13V528.55z M566.94,519.4c-1.26,1.18-2.07,2.89-2.43,5.13h14.1c-0.24-2.28-0.93-4-2.07-5.16
-                     c-1.14-1.16-2.71-1.74-4.71-1.74C569.82,517.63,568.2,518.22,566.94,519.4z" />
-            <path d="M615.71,514.24c2.02,1.34,3.6,3.22,4.74,5.64c1.14,2.42,1.71,5.19,1.71,8.31s-0.56,5.86-1.68,8.22
-                     c-1.12,2.36-2.69,4.18-4.71,5.46c-2.02,1.28-4.35,1.92-6.99,1.92c-2.2,0-4.16-0.47-5.88-1.41c-1.72-0.94-3.04-2.25-3.96-3.93v17.82
-                     h-7.44v-34.68c0-3.2-0.16-6.06-0.48-8.58h7.02l0.6,5.22c0.8-1.88,2.1-3.35,3.9-4.41c1.8-1.06,3.88-1.59,6.24-1.59
-                     C611.38,512.23,613.69,512.9,615.71,514.24z M612.56,535.39c1.36-1.68,2.04-4.08,2.04-7.2c0-3.16-0.68-5.63-2.04-7.41
-                     c-1.36-1.78-3.28-2.67-5.76-2.67c-2.56,0-4.52,0.86-5.88,2.58c-1.36,1.72-2.04,4.18-2.04,7.38c0,3.16,0.68,5.59,2.04,7.29
-                     c1.36,1.7,3.3,2.55,5.82,2.55S611.2,537.07,612.56,535.39z" />
-            <path d="M656.9,524.71v18.6h-7.5v-18.24c0-2.4-0.46-4.15-1.38-5.25c-0.92-1.1-2.34-1.65-4.26-1.65c-2.28,0-4.12,0.73-5.52,2.19
-                     c-1.4,1.46-2.1,3.39-2.1,5.79v17.16h-7.44v-44.16h7.44v18.24c1.04-1.64,2.42-2.91,4.14-3.81c1.72-0.9,3.64-1.35,5.76-1.35
-                     C653.28,512.23,656.9,516.39,656.9,524.71z" />
-            <path d="M691.4,528.55h-20.88c0.16,3.24,0.97,5.63,2.43,7.17c1.46,1.54,3.63,2.31,6.51,2.31c3.32,0,6.4-1.08,9.24-3.24l2.16,5.16
-                     c-1.44,1.16-3.21,2.09-5.31,2.79s-4.23,1.05-6.39,1.05c-4.96,0-8.86-1.4-11.7-4.2c-2.84-2.8-4.26-6.64-4.26-11.52
-                     c0-3.08,0.62-5.82,1.86-8.22c1.24-2.4,2.98-4.27,5.22-5.61c2.24-1.34,4.78-2.01,7.62-2.01c4.16,0,7.45,1.35,9.87,4.05
-                     c2.42,2.7,3.63,6.41,3.63,11.13V528.55z M673.19,519.4c-1.26,1.18-2.07,2.89-2.43,5.13h14.1c-0.24-2.28-0.93-4-2.07-5.16
-                     c-1.14-1.16-2.71-1.74-4.71-1.74C676.08,517.63,674.45,518.22,673.19,519.4z" />
-            <path d="M725.96,524.71v18.6h-7.5v-18.24c0-2.4-0.46-4.15-1.38-5.25c-0.92-1.1-2.34-1.65-4.26-1.65c-2.28,0-4.12,0.73-5.52,2.19
-                     c-1.4,1.46-2.1,3.39-2.1,5.79v17.16h-7.44v-21.72c0-3.2-0.16-6.06-0.48-8.58h7.02l0.54,4.98c1.04-1.84,2.45-3.26,4.23-4.26
-                     c1.78-1,3.79-1.5,6.03-1.5C722.34,512.23,725.96,516.39,725.96,524.71z" />
-            <path d="M750.92,500.59h15.72c7,0,12.43,1.86,16.29,5.58c3.86,3.72,5.79,8.96,5.79,15.72c0,6.8-1.93,12.07-5.79,15.81
-                     c-3.86,3.74-9.29,5.61-16.29,5.61h-15.72V500.59z M766.16,537.01c9.84,0,14.76-5.04,14.76-15.12c0-10-4.92-15-14.76-15h-7.5v30.12
-                     H766.16z" />
-            <path d="M825.08,513.01v30.3h-7.38v-4.86c-0.92,1.68-2.24,2.99-3.96,3.93c-1.72,0.94-3.68,1.41-5.88,1.41
-                     c-2.64,0-4.98-0.64-7.02-1.92c-2.04-1.28-3.62-3.1-4.74-5.46c-1.12-2.36-1.68-5.1-1.68-8.22s0.57-5.89,1.71-8.31
-                     c1.14-2.42,2.73-4.3,4.77-5.64c2.04-1.34,4.36-2.01,6.96-2.01c2.2,0,4.16,0.47,5.88,1.41c1.72,0.94,3.04,2.25,3.96,3.93v-4.56
-                     H825.08z M815.66,535.33c1.36-1.72,2.04-4.14,2.04-7.26c0-3.2-0.68-5.66-2.04-7.38c-1.36-1.72-3.3-2.58-5.82-2.58
-                     c-2.48,0-4.41,0.89-5.79,2.67c-1.38,1.78-2.07,4.25-2.07,7.41c0,3.12,0.69,5.52,2.07,7.2c1.38,1.68,3.33,2.52,5.85,2.52
-                     C812.38,537.91,814.3,537.05,815.66,535.33z" />
-            <path d="M833.24,543.31v-44.16h7.44v44.16H833.24z" />
+                d="M41.1858 16.4502V27.7502C41.1858 30.7169 42.5692 32.2002 45.3358 32.2002C46.1025 32.2002 46.9358 32.0669 47.8358 31.8002V36.7502C46.7358 37.1502 45.4025 37.3502 43.8358 37.3502C40.9692 37.3502 38.7692 36.5502 37.2358 34.9502C35.7025 33.3502 34.9358 31.0502 34.9358 28.0502V16.4502H30.0858V11.7502H34.9358V5.6002L41.1858 3.5002V11.7502H47.8858V16.4502H41.1858Z" />
             <path
-                d="M858.44,518.65v13.56c0,3.56,1.66,5.34,4.98,5.34c0.92,0,1.92-0.16,3-0.48v5.94c-1.32,0.48-2.92,0.72-4.8,0.72
-                     c-3.44,0-6.08-0.96-7.92-2.88c-1.84-1.92-2.76-4.68-2.76-8.28v-13.92h-5.82v-5.64h5.82v-7.38l7.5-2.52v9.9h8.04v5.64H858.44z" />
-            <path d="M877.25,541.87c-2.34-1.28-4.14-3.11-5.4-5.49c-1.26-2.38-1.89-5.17-1.89-8.37c0-3.2,0.63-5.99,1.89-8.37
-                     c1.26-2.38,3.06-4.21,5.4-5.49c2.34-1.28,5.05-1.92,8.13-1.92c3.04,0,5.72,0.64,8.04,1.92c2.32,1.28,4.11,3.11,5.37,5.49
-                     c1.26,2.38,1.89,5.17,1.89,8.37c0,3.2-0.63,5.99-1.89,8.37c-1.26,2.38-3.05,4.21-5.37,5.49c-2.32,1.28-5,1.92-8.04,1.92
-                     C882.3,543.79,879.59,543.15,877.25,541.87z M891.17,535.42c1.34-1.66,2.01-4.13,2.01-7.41c0-3.24-0.68-5.71-2.04-7.41
-                     c-1.36-1.7-3.28-2.55-5.76-2.55c-2.52,0-4.46,0.85-5.82,2.55c-1.36,1.7-2.04,4.17-2.04,7.41c0,3.28,0.67,5.75,2.01,7.41
-                     c1.34,1.66,3.27,2.49,5.79,2.49C887.88,537.91,889.83,537.08,891.17,535.42z" />
-            <path d="M935.36,524.71v18.6h-7.5v-18.24c0-2.4-0.46-4.15-1.38-5.25c-0.92-1.1-2.34-1.65-4.26-1.65c-2.28,0-4.12,0.73-5.52,2.19
-                     c-1.4,1.46-2.1,3.39-2.1,5.79v17.16h-7.44v-21.72c0-3.2-0.16-6.06-0.48-8.58h7.02l0.54,4.98c1.04-1.84,2.45-3.26,4.23-4.26
-                     c1.78-1,3.79-1.5,6.03-1.5C931.74,512.23,935.36,516.39,935.36,524.71z" />
+                d="M74.2812 24.7002H56.8811C57.0145 27.4002 57.6811 29.4002 58.8811 30.7002C60.1145 31.9669 61.9312 32.6002 64.3312 32.6002C67.0978 32.6002 69.6645 31.7002 72.0312 29.9002L73.8312 34.2002C72.6312 35.1669 71.1478 35.9502 69.3811 36.5502C67.6478 37.1169 65.8812 37.4002 64.0812 37.4002C59.9478 37.4002 56.6978 36.2335 54.3312 33.9002C51.9645 31.5669 50.7812 28.3669 50.7812 24.3002C50.7812 21.7335 51.2978 19.4502 52.3312 17.4502C53.3645 15.4502 54.8145 13.9002 56.6812 12.8002C58.5478 11.6669 60.6645 11.1002 63.0312 11.1002C66.4978 11.1002 69.2312 12.2335 71.2312 14.5002C73.2645 16.7335 74.2812 19.8169 74.2812 23.7502V24.7002ZM63.1812 15.6002C61.5145 15.6002 60.1478 16.1002 59.0812 17.1002C58.0478 18.0669 57.3812 19.4835 57.0812 21.3502H68.8312C68.6312 19.4502 68.0478 18.0169 67.0812 17.0502C66.1478 16.0835 64.8478 15.6002 63.1812 15.6002Z" />
+            <path
+                d="M93.9737 11.1002C96.1404 11.1002 98.0571 11.6669 99.7237 12.8002C101.424 13.9002 102.74 15.4669 103.674 17.5002C104.64 19.5002 105.124 21.8002 105.124 24.4002C105.124 27.0002 104.657 29.2835 103.724 31.2502C102.79 33.2169 101.474 34.7335 99.7737 35.8002C98.1071 36.8669 96.1737 37.4002 93.9737 37.4002C92.1404 37.4002 90.5071 37.0169 89.0737 36.2502C87.6404 35.4502 86.5404 34.3502 85.7737 32.9502V47.8002H79.5737V18.9002C79.5737 16.2335 79.4404 13.8502 79.1737 11.7502H85.0237L85.5237 16.1002C86.1904 14.5335 87.2737 13.3169 88.7737 12.4502C90.2737 11.5502 92.0071 11.1002 93.9737 11.1002ZM92.2737 32.5002C94.3737 32.5002 95.9904 31.8002 97.1237 30.4002C98.2571 29.0002 98.8237 27.0002 98.8237 24.4002C98.8237 21.7669 98.2571 19.7169 97.1237 18.2502C95.9904 16.7502 94.3904 16.0002 92.3237 16.0002C90.1904 16.0002 88.5571 16.7169 87.4237 18.1502C86.2904 19.5835 85.7237 21.6335 85.7237 24.3002C85.7237 26.9335 86.2904 28.9669 87.4237 30.4002C88.5571 31.8002 90.1737 32.5002 92.2737 32.5002Z" />
+            <path
+                d="M125.03 11.1002C131.063 11.1002 134.08 14.5669 134.08 21.5002V37.0002H127.83V21.8002C127.83 19.8002 127.446 18.3502 126.68 17.4502C125.913 16.5169 124.73 16.0502 123.13 16.0502C121.23 16.0502 119.696 16.6669 118.53 17.9002C117.363 19.1002 116.78 20.7002 116.78 22.7002V37.0002H110.58V0.200195H116.78V15.4002C117.646 14.0335 118.796 12.9835 120.23 12.2502C121.663 11.4835 123.263 11.1002 125.03 11.1002Z" />
+            <path
+                d="M162.807 24.7002H145.407C145.54 27.4002 146.207 29.4002 147.407 30.7002C148.64 31.9669 150.457 32.6002 152.857 32.6002C155.623 32.6002 158.19 31.7002 160.557 29.9002L162.357 34.2002C161.157 35.1669 159.673 35.9502 157.907 36.5502C156.173 37.1169 154.407 37.4002 152.607 37.4002C148.473 37.4002 145.223 36.2335 142.857 33.9002C140.49 31.5669 139.307 28.3669 139.307 24.3002C139.307 21.7335 139.823 19.4502 140.857 17.4502C141.89 15.4502 143.34 13.9002 145.207 12.8002C147.073 11.6669 149.19 11.1002 151.557 11.1002C155.023 11.1002 157.757 12.2335 159.757 14.5002C161.79 16.7335 162.807 19.8169 162.807 23.7502V24.7002ZM151.707 15.6002C150.04 15.6002 148.673 16.1002 147.607 17.1002C146.573 18.0669 145.907 19.4835 145.607 21.3502H157.357C157.157 19.4502 156.573 18.0169 155.607 17.0502C154.673 16.0835 153.373 15.6002 151.707 15.6002Z" />
+            <path
+                d="M182.549 11.1002C188.582 11.1002 191.599 14.5669 191.599 21.5002V37.0002H185.349V21.8002C185.349 19.8002 184.966 18.3502 184.199 17.4502C183.432 16.5169 182.249 16.0502 180.649 16.0502C178.749 16.0502 177.216 16.6669 176.049 17.9002C174.882 19.1002 174.299 20.7002 174.299 22.7002V37.0002H168.099V18.9002C168.099 16.2335 167.966 13.8502 167.699 11.7502H173.549L173.999 15.9002C174.866 14.3669 176.032 13.1835 177.499 12.3502C178.999 11.5169 180.682 11.1002 182.549 11.1002Z" />
+            <path
+                d="M212.397 1.4002H225.497C231.33 1.4002 235.847 2.9502 239.047 6.0502C242.28 9.1502 243.897 13.5169 243.897 19.1502C243.897 24.8169 242.28 29.2169 239.047 32.3502C235.847 35.4502 231.33 37.0002 225.497 37.0002H212.397V1.4002ZM225.097 31.7502C233.297 31.7502 237.397 27.5502 237.397 19.1502C237.397 10.8169 233.297 6.6502 225.097 6.6502H218.847V31.7502H225.097Z" />
+            <path
+                d="M274.183 11.7502V37.0002H268.033V32.9502C267.266 34.3502 266.166 35.4502 264.733 36.2502C263.299 37.0169 261.666 37.4002 259.833 37.4002C257.633 37.4002 255.683 36.8669 253.983 35.8002C252.283 34.7335 250.966 33.2169 250.033 31.2502C249.099 29.2835 248.633 27.0002 248.633 24.4002C248.633 21.8002 249.099 19.5002 250.033 17.5002C250.999 15.4669 252.333 13.9002 254.033 12.8002C255.733 11.6669 257.666 11.1002 259.833 11.1002C261.666 11.1002 263.299 11.5002 264.733 12.3002C266.166 13.0669 267.266 14.1502 268.033 15.5502V11.7502H274.183ZM261.533 32.5002C263.599 32.5002 265.199 31.7835 266.333 30.3502C267.466 28.9169 268.033 26.9002 268.033 24.3002C268.033 21.6335 267.466 19.5835 266.333 18.1502C265.199 16.7169 263.583 16.0002 261.483 16.0002C259.416 16.0002 257.799 16.7502 256.633 18.2502C255.499 19.7169 254.933 21.7669 254.933 24.4002C254.933 27.0002 255.499 29.0002 256.633 30.4002C257.799 31.8002 259.433 32.5002 261.533 32.5002Z" />
+            <path d="M280.99 0.200195H287.19V37.0002H280.99V0.200195Z" />
+            <path
+                d="M301.977 16.4502V27.7502C301.977 30.7169 303.36 32.2002 306.127 32.2002C306.894 32.2002 307.727 32.0669 308.627 31.8002V36.7502C307.527 37.1502 306.194 37.3502 304.627 37.3502C301.76 37.3502 299.56 36.5502 298.027 34.9502C296.494 33.3502 295.727 31.0502 295.727 28.0502V16.4502H290.877V11.7502H295.727V5.6002L301.977 3.5002V11.7502H308.677V16.4502H301.977Z" />
+            <path
+                d="M324.422 37.4002C321.856 37.4002 319.589 36.8669 317.622 35.8002C315.689 34.7335 314.189 33.2169 313.122 31.2502C312.089 29.2502 311.572 26.9169 311.572 24.2502C311.572 21.5835 312.089 19.2669 313.122 17.3002C314.189 15.3002 315.689 13.7669 317.622 12.7002C319.589 11.6335 321.856 11.1002 324.422 11.1002C326.956 11.1002 329.189 11.6335 331.122 12.7002C333.055 13.7669 334.539 15.3002 335.572 17.3002C336.639 19.2669 337.172 21.5835 337.172 24.2502C337.172 26.9169 336.639 29.2502 335.572 31.2502C334.539 33.2169 333.055 34.7335 331.122 35.8002C329.189 36.8669 326.956 37.4002 324.422 37.4002ZM324.372 32.5002C326.505 32.5002 328.122 31.8169 329.222 30.4502C330.356 29.0502 330.922 26.9835 330.922 24.2502C330.922 21.5502 330.356 19.5002 329.222 18.1002C328.089 16.6669 326.489 15.9502 324.422 15.9502C322.322 15.9502 320.706 16.6669 319.572 18.1002C318.439 19.5002 317.872 21.5502 317.872 24.2502C317.872 26.9835 318.422 29.0502 319.522 30.4502C320.656 31.8169 322.272 32.5002 324.372 32.5002Z" />
+            <path
+                d="M357.012 11.1002C363.045 11.1002 366.062 14.5669 366.062 21.5002V37.0002H359.812V21.8002C359.812 19.8002 359.429 18.3502 358.662 17.4502C357.895 16.5169 356.712 16.0502 355.112 16.0502C353.212 16.0502 351.679 16.6669 350.512 17.9002C349.345 19.1002 348.762 20.7002 348.762 22.7002V37.0002H342.562V18.9002C342.562 16.2335 342.429 13.8502 342.162 11.7502H348.012L348.462 15.9002C349.329 14.3669 350.495 13.1835 351.962 12.3502C353.462 11.5169 355.145 11.1002 357.012 11.1002Z" />
         </svg>
     </div>
 
+
     <div class="showcase-container">
-        <h1 class="showcase-h1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            data-aos-duration="1000">Hi, Im <span class="showcase-h1-sub">Stephen</span>. I'm a Front End Web Developer
+        <h1 class="showcase-h1">Hi, Im <span class="showcase-h1-sub">Stephen</span>. I'm a Front End Web Developer
         </h1>
-        <p class="showcase-about" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            data-aos-duration="1000">
+        <p class="showcase-about">
             I am a 25 year old self-taught front end web developer. I am a web-development convert having previously
             worked in professional sport. I recently started a Computer Science Masters at the University of
             Hertfordshire, to deepen and ground my knowledge in Computer Science fundamentals.
@@ -90,14 +56,12 @@
             full-time in a web technology company as an Analyst and I am actively making a move to become a full-time
             web developer. Please see my projects below.
         </p>
-        <img src="./assets/IMG_1703.jpg" alt="Stephen Dalton" class="showcase-img" data-aos="fade-left"
-            data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">
+        <img src="./assets/IMG_1703.jpg" alt="Stephen Dalton" class="showcase-img">
     </div>
     <div class="resume-container">
-        <h3 class="resume-h3" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-            data-aos-offset="0">My Work</h3>
+        <h3 class="resume-h3" id="MyWork">My Work</h3>
         <div class="work-card-container">
-            <div class="work-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="work-card">
                 <a target="_blank" href="http://jonathan-griffin.netlify.com"><img src="./assets/JGrffinSite.jpeg"
                         alt="Jonathan Griffin" class="work-img"> </a>
 
@@ -108,21 +72,21 @@
                     <br><br>
                     <strong>N.B.</strong> The client has given permission for the site to be displayed pre-production.
                 </p>
-                <button class="project-button">
-                    <a target="_blank" href="http://jonathan-griffin.netlify.com" class="work-link">View Project<i
-                            class="fas fa-caret-right"></i></a>
-                </button>
+                <a target="_blank" href="http://jonathan-griffin.netlify.com" class="work-link">
+                    <button class="project-button">
+                        View Project
+                    </button>
+                </a>
 
             </div>
         </div>
     </div>
     <div class="js-projects-container">
-        <h3 class="projects-h3" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-            data-aos-offset="0"><i class="fab fa-js-square"></i>Vanilla JS Sorting Visualisers</h3>
+        <h3 class="projects-h3"><i class="fab fa-js-square"></i>Vanilla JS Sorting Visualisers</h3>
 
         <div class="projects-card-container">
 
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="https://sorting-alog-visualiser.netlify.com/"><img
                         src="./assets/sorting-alog-visualiser.jpg" alt="Sorting Algorithm" class="projects-img"></a>
                 <h4 class="projects-h4">Sorting Algorithm Visualiser</h4>
@@ -130,22 +94,21 @@
                     the screen. This was my first introductions to sorting
                     algorithms and visualising it.
                 </p>
-                <button class="project-button">
-                    <a target="_blank" href="https://sorting-alog-visualiser.netlify.com/" class="projects-link">View
-                        Project<i class="fas fa-caret-right"></i></a>
-                </button>
+                <a target="_blank" href="https://sorting-alog-visualiser.netlify.com/" class="projects-link">
+                    <button class="project-button">
+                        View Project
+                    </button></a>
             </div>
 
 
         </div>
     </div>
     <div class="js-projects-container">
-        <h3 class="projects-h3" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-            data-aos-offset="0"><i class="fab fa-js-square"></i>Vanilla JS Apps</h3>
+        <h3 class="projects-h3"><i class="fab fa-js-square"></i>Vanilla JS Apps</h3>
 
         <div class="projects-card-container">
 
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="https://daltsmusicplayer.netlify.com"><img src="./assets/MusicPlayer.jpeg"
                         alt="Music Player" class="projects-img"></a>
                 <h4 class="projects-h4">Music Player</h4>
@@ -156,11 +119,13 @@
                     <br><br>
                     Enjoy the music!
                 </p>
-                <button class="project-button">
-                    <a target="_blank" href="https://daltsmusicplayer.netlify.com" class="projects-link">View Project<i
-                            class="fas fa-caret-right"></i></a></button>
+                <a target="_blank" href="https://daltsmusicplayer.netlify.com" class="projects-link">
+                    <button class="project-button">
+                        View Project
+                    </button>
+                </a>
             </div>
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="https://app-hangman.netlify.com"><img src="./assets/Hangman.jpeg" alt="Hangman"
                         class="projects-img"></a>
                 <h4 class="projects-h4">Hangman App</h4>
@@ -170,11 +135,11 @@
                     rules and manipulation of strings and arrays.
                     <br><br>
                     Avoid getting hanged!</p>
-                    <button class="project-button">
-                <a target="_blank" href="https://app-hangman.netlify.com" class="projects-link">View Project<i
-                        class="fas fa-caret-right"></i></a></button>
+                <a target="_blank" href="https://app-hangman.netlify.com" class="projects-link"></a><button
+                    class="project-button">
+                    View Project</button></a>
             </div>
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="https://app-multidayweather.netlify.com"><img
                         src="./assets/Multi-Day-Weather-App.jpeg" alt="Multi Day Weather App" class="projects-img"></a>
                 <h4 class="projects-h4">Multi Day Weather App</h4>
@@ -185,18 +150,19 @@
                     <br><br>
                     Find out this weeks weather where you are!
                 </p>
-                <button class="project-button">
-                <a target="_blank" href="https://app-multidayweather.netlify.com" class="projects-link">View Project<i
-                        class="fas fa-caret-right"></i></a></button>
+                <a target="_blank" href="https://app-multidayweather.netlify.com" class="projects-link">
+                    <button class="project-button">
+                        View Project
+                    </button>
+                </a>
             </div>
         </div>
     </div>
     <div class="js-projects-container">
-        <h3 class="projects-h3" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-            data-aos-offset="0"><i class="fab fa-js-square"></i>Vanilla JS Games</h3>
+        <h3 class="projects-h3"><i class="fab fa-js-square"></i>Vanilla JS Games</h3>
 
         <div class="projects-card-container">
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="http://flappy-birdclone.netlify.com"><img src="./assets/flappy-bird-clone.png"
                         alt="Flappy Bird Clone" class="projects-img"></a>
                 <h4 class="projects-h4">Flappy Bird Clone</h4>
@@ -206,11 +172,13 @@
                     storage to maintain the users best score.
                     <br><br>
                     Let’s see what score you can get!</p>
+                <a target="_blank" href="http://flappy-birdclone.netlify.com" class="projects-link">
                     <button class="project-button">
-                <a target="_blank" href="http://flappy-birdclone.netlify.com" class="projects-link">View Project<i
-                        class="fas fa-caret-right"></i></a></button>
+                        View Project
+                    </button>
+                </a>
             </div>
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="http://oop-rugbyquiz.netlify.com"><img src="./assets/OOP-Quiz.jpeg"
                         alt="OOP Quiz" class="projects-img"></a>
                 <h4 class="projects-h4">OOP-Quiz</h4>
@@ -219,20 +187,21 @@
                     project and was introduced to modularising your code and planning your logic.
                     <br><br>
                     Let’s see what score you can get!</p>
+                <a target="_blank" href="http://oop-rugbyquiz.netlify.com" class="projects-link">
                     <button class="project-button">
-                <a target="_blank" href="http://oop-rugbyquiz.netlify.com" class="projects-link">View Project<i
-                        class="fas fa-caret-right"></i></a></button>
+                        View Project
+                    </button>
+                </a>
             </div>
 
 
         </div>
     </div>
     <div class="ang-projects-container">
-        <h3 class="projects-h3" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-            data-aos-offset="0"><i class="fab fa-angular"></i>Angular Projects</h3>
+        <h3 class="projects-h3"><i class="fab fa-angular"></i>Angular Projects</h3>
 
         <div class="projects-card-container">
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <a target="_blank" href="https://app-tictactoe.netlify.com"><img src="./assets/A-tictactoe.jpeg"
                         alt="Tic Tac Toe" class="projects-img"></a>
                 <h4 class="projects-h4">Tic Tac Toe</h4>
@@ -242,23 +211,26 @@
                     was using the Angular CLI, component design pattern, framework fundamentals and basic algorithmes.
                     <br><br>
                     Download the game to play with a friend!</p>
+                <a target="_blank" href="https://app-tictactoe.netlify.com" class="projects-link">
                     <button class="project-button">
-                <a target="_blank" href="https://app-tictactoe.netlify.com" class="projects-link">View Project<i
-                        class="fas fa-caret-right"></i></a></button>
+                        View Project
+                    </button>
+                </a>
             </div>
-            <div class="projects-card" data-aos="fade-up" data-aos-duration="3000">
+            <div class="projects-card">
                 <img src="./assets/Kabanular.jpeg" alt="Kabanular" class="projects-img">
                 <h4 class="projects-h4">Kabanular</h4>
                 <p class="projects-about">I am currently working on my first full-stack progressive web application.
                     Kabanular is styled off the popular Trello application which utilises boards and tasks to help with
                     task and project management. The project will include user authentication, user profile and
                     Firestore database integration.</p>
-                <p class="projects-link--soon">Coming Soon</p>
+                <button class="project-button">
+                    <p class="projects-link--soon">Coming Soon</p>
+                </button>
             </div>
         </div>
     </div>
-    <div class="skills-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine" data-aos-delay="500"
-        data-aos-offset="0">
+    <div class="skills-container">
         <h3 class="skills-h3">
             My Skills
         </h3>
@@ -297,13 +269,7 @@
     </div>
 
 
-    <script src="./app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
+    <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>
